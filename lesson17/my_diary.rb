@@ -8,16 +8,16 @@ all_lines =[]
 
 while line != "end" do
   line = STDIN.gets.encode("UTF-8").chomp
-  all_lines << lines
+  all_lines << line
 end
 
 time =  Time.now
 file_name = time.strftime("%Y-%m-%d")# 2015-10-21
-time_string = time.strtime("%H:%M")#07:16
+time_string = time.strftime("%H:%M")#07:16
 
 separator = "-----------------------------------------"
 
-file = File.new(current_path + "/" + file_name +".txt","a=UTF-8")
+file = File.new(current_path + "/" + file_name +".txt", "a:UTF-8")
 file.print("\n\r" + time_string + "\n\r")
 all_lines.pop
 
