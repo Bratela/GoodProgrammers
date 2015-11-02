@@ -1,7 +1,7 @@
 require "pony"
 require "io/console"
 
-my_mail ="sitecreator1812@ya.ru"
+my_mail ="hereyoursmailadress@ya.ru"
 
 puts "Введите пароль от вашей почты #{my_mail} для отправки письма:"
 password =STDIN.noecho(&:gets).chomp
