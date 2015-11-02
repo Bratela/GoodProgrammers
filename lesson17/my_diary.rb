@@ -1,7 +1,7 @@
 puts "Привет я твой дневник!"
 puts "Я сохраню всё что ты напишешь"
 
-current_path = File.dirname(__FILE__)
+current_path = File.dirname(__FILE__)#Определение пути файла
 
 line = nil
 all_lines =[]
@@ -17,7 +17,7 @@ time_string = time.strftime("%H:%M")#07:16
 
 separator = "-----------------------------------------"
 
-file = File.new(current_path + "/" + file_name +".txt", "a:UTF-8")
+file = File.new(current_path + "/" + file_name +".txt", "a:UTF-8")#создание и сохранение файла 
 file.print("\n\r" + time_string + "\n\r")
 all_lines.pop
 
